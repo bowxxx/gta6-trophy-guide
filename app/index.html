@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vice City Platinum Roadmap — GTA 6 Trophy Guide &amp; Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+  <div class="hero-inner">
+    <p class="kicker">Grand Theft Auto VI &middot; PlayStation 5</p>
+    <h1>Vice City Platinum Roadmap</h1>
+    <p class="sub">Every one of the 55 official trophies — with a guide that cites its sources, a roadmap to the platinum, and a tracker that remembers your progress.</p>
+    <div class="progress-wrap" role="status">
+      <div class="progress-bar"><div id="progress-fill" class="progress-fill" style="width:0%"></div></div>
+      <p id="progress-text" class="progress-text">0 of 55 earned</p>
+      <p id="progress-grades" class="progress-grades"></p>
+    </div>
+  </div>
+</header>
+
+<main>
+<section id="roadmap" class="roadmap" aria-label="Roadmap to the platinum">
+  <h2>Roadmap to the platinum</h2>
+  <p class="roadmap-intro">About 200 hours, one playthrough, no online trophies. PowerPyx rates the platinum 4/10 for difficulty — the grind is the 100% checklist, not the story. Cheats disable trophies (and saving), so leave them alone until the platinum pops.</p>
+  <div class="facts" aria-label="Key facts">
+    <span><strong>55</strong> trophies</span>
+    <span><strong>1</strong> platinum &middot; <strong>2</strong> gold &middot; <strong>6</strong> silver &middot; <strong>46</strong> bronze</span>
+    <span><strong>28</strong> hidden</span>
+    <span><strong>0</strong> online</span>
+    <span><strong>~200 h</strong> to platinum</span>
+    <span><strong>1</strong> playthrough</span>
+  </div>
+  <div class="steps">
+    <article class="step">
+      <h3>Step 1 — Play the story <span class="hours">60–80 hours</span></h3>
+      <p>Finish all five chapters. The 12 story trophies pop on their own as missions and chapters end — none can be missed. Start the optional questlines as they appear (Andy, Kenton, Billy, Randy, Tyrone, Bret) and scan vehicles and animals as you go: progress toward the 100% checklist counts from the start, even though the checklist itself only becomes visible after the story.</p>
+      <p>There is no mission replay, so keep a manual save at the start and end of each chapter (15 manual slots). Quest givers who vanish for a while always come back later.</p>
+    </article>
+    <article class="step">
+      <h3>Step 2 — 100% Completion Checklist <span class="hours">~100 hours</span></h3>
+      <p>After the story, open Progress, then Stats, then 100% Completion. The list is forgiving — closer to 60% true completion: most side quests are not needed, and collectibles are only partly required. The full requirements are the robberies (39 gang operations, 8 bank vaults), underwater discoveries, shooting ranges, drone races and Bret's quests, plus any 70 of the 80 challenges, 300 stunts, 200 of 277 vehicles scanned and 100 of 255 animals studied. Nothing on it can be missed.</p>
+    </article>
+    <article class="step">
+      <h3>Step 3 — Strangers &amp; Freaks + cleanup <span class="hours">~10 hours</span></h3>
+      <p>Finish the 8 stranger mission strands that count (Kirk, Kyle, Yago and Pilot Pete are confirmed; some questlines do not count), then mop up whatever is left: the robbery trophies, the UFO easter egg, the odd one-out challenges and the miscellaneous feats. The platinum pops with the last one.</p>
+    </article>
+  </div>
+  <aside class="missable-banner" id="missable-banner">
+    <h3>⚠ The one trophy that might be missable</h3>
+    <p><strong>Positive Mental Attitude</strong> (meditate at every spot) is the list's only possibly missable trophy. During <strong>Chapter 1</strong>, after the mission <em>Down to Earth</em>, Lucia may talk about meditating in the kitchen in the morning — follow her to the balcony and choose <strong>Accept</strong>. That first meditation becomes unavailable once Chapter 1 ends, and it is not yet confirmed whether the trophy needs it, so do it while you can. Everything else on the list can be finished after the story in free-roam.</p>
+  </aside>
+</section>
+
+<section class="tracker" aria-label="Trophy tracker">
+  <div class="controls" id="controls">
+    <label class="search">Search <input id="search" type="search" placeholder="Trophy name, mission, activity…" autocomplete="off"></label>
+    <div class="chips" id="kind-chips" role="group" aria-label="Filter by kind">
+      <button type="button" data-kind="all" class="chip active">All 55</button>
+      <button type="button" data-kind="story" class="chip">Story</button>
+      <button type="button" data-kind="missable" class="chip">Missable</button>
+      <button type="button" data-kind="collectibles" class="chip">Collectibles</button>
+      <button type="button" data-kind="activities" class="chip">Activities</button>
+      <button type="button" data-kind="online" class="chip">Online</button>
+      <button type="button" data-kind="platinum" class="chip">Platinum</button>
+    </div>
+    <label class="grade">Grade
+      <select id="grade">
+        <option value="all">All grades</option>
+        <option value="platinum">Platinum</option>
+        <option value="gold">Gold</option>
+        <option value="silver">Silver</option>
+        <option value="bronze">Bronze</option>
+      </select>
+    </label>
+    <label class="toggle"><input id="spoiler" type="checkbox"> Spoiler-safe: hide story trophies until earned</label>
+    <label class="toggle"><input id="hide-earned" type="checkbox"> Hide earned</label>
+    <div class="io">
+      <button id="export" type="button">Export progress</button>
+      <label class="import">Import progress <input id="import" type="file" accept="application/json,.json"></label>
+      <button id="reset" type="button">Reset</button>
+    </div>
+  </div>
+  <p id="count-line" class="count-line"></p>
+  <div id="list" class="list"></div>
+  <p id="empty" class="empty" hidden>No trophies match these filters. Try another kind or clear the search.</p>
+  <p id="online-note" class="empty" hidden>There are no online trophies — all 55 are single-player, and every one can be earned offline.</p>
+</section>
+</main>
+
+<footer>
+  <h2>Sources &amp; notes</h2>
+  <p>Trophy names, descriptions and grades are the official PlayStation 5 list as published on PlayStation Network, cross-checked on Exophase and PSNProfiles. Each guide above is written in our own words for this guide and names the guide it draws on — a source is cited, never copied. Where the latest guides have not confirmed a step yet (notably <em>Bad Luck, I Guess</em>), the guide says so instead of inventing one.</p>
+  <ul>
+    <li><a href="https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/">PowerPyx — GTA 6 Trophy Guide &amp; Roadmap</a> (roadmap, per-trophy steps, missable warning, counts)</li>
+    <li><a href="https://www.planetgta6.com/en/gta-6-trophies/">Planet GTA 6 — GTA 6 Trophies</a> (official list, cross-checked with Exophase, PSNProfiles and TrueAchievements)</li>
+    <li><a href="https://www.pushsquare.com/guides/gta-6-trophy-guide-and-roadmap">Push Square — GTA 6 Trophy Guide &amp; Roadmap</a></li>
+    <li><a href="https://www.keengamer.com/articles/guides/gta-6-trophy-guide-platinum-roadmap-all-55-trophies/">KeenGamer — GTA 6 Trophy Guide &amp; Platinum Roadmap</a></li>
+    <li><a href="https://sixshore.com/gta-6/guides/trophies-and-achievements/">sixshore — GTA 6 Trophy and Achievement List</a></li>
+  </ul>
+  <p class="disclaimer">An unofficial fan guide. Grand Theft Auto and GTA are trademarks of Take-Two Interactive; this guide shows no Rockstar Games logo, artwork or game screenshots. Progress is saved only in this browser (localStorage); nothing is uploaded anywhere. Works fully offline.</p>
+</footer>
+<script type="module" src="app.js"></script>
+</body>
+</html>
